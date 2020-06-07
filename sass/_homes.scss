@@ -5,6 +5,15 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap: 7rem;
+
+    @include respond(bp-mid) {
+        margin: 10rem 0;
+    }
+
+    @include respond(bp-small) {
+        margin: 8rem 0;
+        gap: 5rem;
+    }
 }
 
 .home {

@@ -1,6 +1,7 @@
 .realtor {
     background-color: $color-secondary;
     grid-column: col-start 7 / full-end;
+    padding: 4rem;
 
     display: grid;
     justify-content: center;
@@ -8,12 +9,24 @@
     justify-items: center;
     row-gap: 2rem;
 
+    @include respond(bp-mid) {
+        grid-column: 1 / -1;
+    }
+
     &__list {
         display: grid;
         grid-template-columns: min-content max-content;
         column-gap: 2rem;
         row-gap: 5vh;
         align-items: center;
+
+        @include respond(bp-mid) {
+            grid-template-columns: repeat(3, min-content max-content);
+        }
+
+        @include respond(bp-small) {
+            grid-template-columns: min-content max-content;
+        }
     }
 
     &__img {
