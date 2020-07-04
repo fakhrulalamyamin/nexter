@@ -20,7 +20,7 @@ html {
 
 body {
   font-family: "Nunito", sans-serif;
-  color: #6D5D4B;
+  color: #6d5d4b;
   font-weight: 300;
   line-height: 1.6; }
 
@@ -36,6 +36,10 @@ body {
     .container {
       grid-template-rows: 6rem calc(100vh - 6rem); } }
 
+::selection {
+  background-color: #c69963;
+  color: #f9f7f6; }
+
 .heading-1, .heading-2, .heading-3, .heading-4 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400; }
@@ -50,7 +54,7 @@ body {
   font-style: italic;
   line-height: 1; }
   .heading-2--dark {
-    color: #54483A; }
+    color: #54483a; }
   .heading-2--light {
     color: #f9f7f6; }
 
@@ -62,7 +66,7 @@ body {
 .heading-4 {
   font-size: 1.9rem; }
   .heading-4--dark {
-    color: #54483A; }
+    color: #54483a; }
   .heading-4--light {
     color: #f9f7f6; }
 
@@ -78,7 +82,7 @@ body {
   cursor: pointer;
   transition: all .2s; }
   .btn:hover {
-    background-color: #B28451; }
+    background-color: #b28451; }
 
 .mb-sm {
   margin-bottom: 2rem; }
